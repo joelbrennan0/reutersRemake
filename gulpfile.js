@@ -1,7 +1,10 @@
 /* gulpfile.js */
 var
     gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    nunjucksRender = require('gulp-nunjucks-render'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify');
 
 // source and distribution folder
 var
@@ -31,6 +34,17 @@ var css = {
         includePaths: [bootstrapSass.in + 'assets/stylesheets']
     }
 };
+
+gulp.task('nunjucks', function() {
+  nunjucksRender.nunjucks.configure(['src/templates/']);
+
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender())
+  // output files in src folder
+  .pipe(gulp.dest('src'))
+});
 
 // copy bootstrap required fonts to dest
 gulp.task('fonts', function () {
