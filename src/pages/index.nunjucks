@@ -2,5 +2,5 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<h1>This is the index page - edited</h1>
+<h1>This is the index page - booyaaaedited</h1>
 {% endblock %}

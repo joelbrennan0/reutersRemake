@@ -9,5 +9,6 @@
     <div class="wrapper">
       {% block content %} {% endblock %}
     </div>
+    <script src="./js/app.min.js" charset="utf-8"></script>
   </body>
 </html>
