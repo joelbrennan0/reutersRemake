@@ -2,5 +2,8 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<h1>This is the index page - booyaaaedited</h1>
+<div class="row">
+{% include "partials/_header.nunjucks" %}
+{% include "partials/_fold-section.nunjucks" %}
+</div>
 {% endblock %}

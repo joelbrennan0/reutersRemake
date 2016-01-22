@@ -1,0 +1,19 @@
+<section class="header">
+  <div class="container">
+    <div class="spacer"></div>
+      <div class="row">
+        <div class="header-block logo col-xs-2 col-md-3"></div>
+          <div class="header-block nav col-xs-9 col-md-8">
+            <ul>
+              <li id="about">About</li>
+              <li id="advertise">Advertise</li>
+              <li id="publishers">Publishers</li>
+              <li id="press">Press</li>
+              <li id="careers">Careers</li>
+            </ul>
+          </div>
+        </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+</section>
