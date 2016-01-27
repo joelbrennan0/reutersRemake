@@ -2,8 +2,6 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<div class="row">
 {% include "partials/_header.nunjucks" %}
 {% include "partials/_fold-section.nunjucks" %}
-</div>
 {% endblock %}

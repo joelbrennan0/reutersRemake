@@ -1,8 +1,15 @@
-<div class="container">
+<div class="container above-fold">
   <div class="row">
-    <div class="col-xs-12 col-md-5"><h1>REUTERS TV
-LAUNCHES WEB APP
-</h1></div>
-    <div class="col-xs-12 col-md-5 col-md-5-offset-1">Test test Changelog</div>
+    <div class="col-xs-12 col-md-5 cta-text"><h1>REUTERS TV<br>LAUNCHES WEB APP</h1>
+      <p>Today Reuters, the world’s largest international multimedia news provider, announced the release of Reuters TV for Web, extending the video news service’s reach to anyone with a browser.</p>
+      <button class="hvr-glow">
+        <div class="arrow"><i class="glyphicon glyphicon-arrow-right"></i></div>
+        <span class="button-text">Read Press Release</span></button>
+    </div>
+    <!-- mobile image -->
+    <div class="col-xs-12 col-md-5 col-md-5-offset-1 mobile-show"><img src="../img/WebApp_small.png" alt="laptop" class="main-image" /></div>
+    <!-- desktop-image -->
+    <div class="col-xs-12 col-md-8 mobile-hide web-app-lg"><img src="../img/hero-press-web-app-v2.jpg" alt="laptop" class="main-image" /></div>
   </div>
+  <hr>
 </div>

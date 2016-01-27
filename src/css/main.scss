@@ -1,12 +1,31 @@
 /* main.scss */
 @import "variables";
+@import "mixins";
 @import "bootstrap";
 @import "bootstrap/theme";
 
-//helo
+.container {
+  max-width: 1335px
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $gray-darker;
+}
+p {
+  color: $gray-light;
+}
+
 img {
   max-width: 100%;
 }
+
+.mobile-show {
+  display: block;
+}
+.mobile-hide {
+  display: none;
+}
+
 section.header {
   background-color: grey;
   color: #2a2a2a;
@@ -42,6 +61,56 @@ section.header {
   }
 }
 
+.above-fold {
+  margin-top: 35px;
+  position: relative;
+  .web-app-lg {
+    float: right;
+    z-index: -1
+  }
+}
+
+.hvr-glow {
+  background-color: #ffffff;
+  color: $gray-darker;
+  border: 1px $gray-light;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1),-3px 4px 6px rgba(0, 0, 0, 0.1),3px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  -webkit-transition-property: box-shadow, color;
+  transition-property: box-shadow, color;
+  width: 227px;
+  height: 71px;
+  margin-top: 25px;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.05),-3px 4px 6px rgba(0, 0, 0, 0.005),3px 4px 6px rgba(0, 0, 0, 0.05);
+  color: $primary;
+}
+.arrow {
+  color: #ffffff;
+  background-color: $primary;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin-right: 9px;
+  i {
+    margin-top: 9px;
+  }
+}
+.button-text {
+}
+
 /*==========  Mobile First Method  ==========*/
 
  /* Custom, iPhone Retina */
@@ -64,6 +133,12 @@ section.header {
    #about {
      display: block !important;
    }
+   .mobile-show {
+     display: none;
+   }
+   .mobile-hide {
+     display: block;
+   }
   .logo {
     background-size: contain !important;
     background-position: calc(100% - 0px) calc(100% - 0px) !important;
@@ -76,7 +151,14 @@ section.header {
       }
     }
   }
+  .cta-text {
+    position: absolute;
+  }
+  hr {
+    margin: 60px 25px;
+  }
  }
+
 
  /* Large Devices, Wide Screens */
  @media only screen and (min-width : 1200px) {
