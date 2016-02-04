@@ -6,7 +6,8 @@ var
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     maps = require('gulp-sourcemaps'),
-    cssnano = require('gulp-cssnano');
+    cssnano = require('gulp-cssnano'),
+    data = require('gulp-data');
 
 // source and distribution folder
 var
@@ -53,6 +54,10 @@ gulp.task('nunjucks', function() {
 
   // Gets .html and .nunjucks files in pages
   return gulp.src('src/pages/**/*.+(html|nunjucks)')
+  // Adding data to Nunjucks
+  .pipe(data(function() {
+    return require('./src/JSON/press-releases.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in src folder

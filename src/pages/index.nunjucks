@@ -4,4 +4,5 @@
 {% block content %}
 {% include "partials/_header.nunjucks" %}
 {% include "partials/_fold-section.nunjucks" %}
+{% include "partials/_press-releases.nunjucks" %}
 {% endblock %}

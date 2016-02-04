@@ -1,3 +1,32 @@
+@mixin trans($timing) {
+  -webkit-transition: $timing;
+    -moz-transition: $timing;
+    -o-transition: $timing;
+    transition: $timing;
+  -webkit-transition-property: box-shadow, color;
+  transition-property: box-shadow, color;
+}
+
+@mixin button_shadow($width, $height) {
+  background-color: #ffffff;
+  color: $gray-darker;
+  border: 1px $gray-light;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1),-3px 4px 6px rgba(0, 0, 0, 0.1),3px 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  width: $width;
+  height: $height;
+  &:hover, &:active, &:focus {
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.05),-3px 4px 6px rgba(0, 0, 0, 0.005),3px 4px 6px rgba(0, 0, 0, 0.05);
+    color: $primary;
+  }
+}
+
 // @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
 //   @if $inset {
 //     -webkit-box-shadow:inset $top $left $blur $color;

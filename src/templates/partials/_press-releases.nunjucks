@@ -1,0 +1,24 @@
+<section class="press-releases">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-3 side-wrap"><h1>PRESS RELEASES</h1>
+        <div class="media-contact">
+          <p class="small">
+            <span class="bold">Media contact</span><br>
+            <span class="bold">Heather Carpenter</span><br>
+            <a href="mailto:test@test.com">heather.carpenter@thomsonreuters.com</a><br>
+            +1 646 223 8551 <br>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-8 col-md-offset-1">
+        {% for item in press_releases %}
+          <h4><a href="{{item.href}}">{{item.title}}</a></h4>
+          <p class="p-smaller">{{item.date}}</p>
+          <p>{{item.excerpt|safe}}</p>
+          <h6><a href="{{item.href}}" class="more_btn">CONTINUE READING</a></h6>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

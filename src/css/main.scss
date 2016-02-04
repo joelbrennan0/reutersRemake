@@ -4,6 +4,8 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
+/*==========  Site-Wide  ==========*/
+
 .container {
   max-width: 1335px
 }
@@ -11,12 +13,37 @@
 h1,h2,h3,h4,h5,h6 {
   color: $gray-darker;
 }
+
+h1 {
+  font-weight: 900;
+}
+
 p {
   color: $gray-light;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.p-smaller {
+  font-size: 0.85em;
+}
+
+a {
+  color: $gray-darker;
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+    @include trans(0.5s);
+  }
 }
 
 img {
   max-width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+  color: $gray-darker;
 }
 
 .mobile-show {
@@ -25,6 +52,8 @@ img {
 .mobile-hide {
   display: none;
 }
+
+/*==========  Header Section  ==========*/
 
 section.header {
   background-color: grey;
@@ -61,6 +90,8 @@ section.header {
   }
 }
 
+/*=========  Above Fold Section  ========*/
+
 .above-fold {
   margin-top: 35px;
   position: relative;
@@ -70,32 +101,12 @@ section.header {
   }
 }
 
-.hvr-glow {
-  background-color: #ffffff;
-  color: $gray-darker;
-  border: 1px $gray-light;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1),-3px 4px 6px rgba(0, 0, 0, 0.1),3px 4px 6px rgba(0, 0, 0, 0.1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  -webkit-transition-property: box-shadow, color;
-  transition-property: box-shadow, color;
-  width: 227px;
-  height: 71px;
+.cta {
+  @include button_shadow(227px, 71px);
+  @include trans(0.5s);
   margin-top: 25px;
 }
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.05),-3px 4px 6px rgba(0, 0, 0, 0.005),3px 4px 6px rgba(0, 0, 0, 0.05);
-  color: $primary;
-}
+
 .arrow {
   color: #ffffff;
   background-color: $primary;
@@ -111,6 +122,38 @@ section.header {
 .button-text {
 }
 
+/*==========  Press Release Section  =========*/
+.press-releases {
+  text-align:  center;
+  .side-wrap {
+    padding: 10px 0;
+  }
+  .side-wrap:before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 40px;
+    height: 5px;
+    top: 0;
+    background: $primary;
+  }
+  .media-contact {
+    margin: 50px 0 30px;
+    a {
+      color: $gray-light;
+      &:hover, &:focus, &:active {
+        color: $gray-light;
+      }
+    }
+  }
+  h6>a {
+    color: $primary;
+    display: block;
+    margin: 25px 0 45px;
+    font-size: 1.1em;
+    font-weight: 200;
+  }
+}
 /*==========  Mobile First Method  ==========*/
 
  /* Custom, iPhone Retina */
