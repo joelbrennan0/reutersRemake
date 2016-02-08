@@ -1,0 +1,23 @@
+<section class="in-the-news default-section">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-2 side-wrap"><h1>IN THE <br class="mobile-hide">NEWS</h1>
+      </div>
+      <div class="col-md-8 col-md-offset-1 col-sm-10 col-sm-offset-2 links-container">
+        {% for item in news_links %}
+          <div class="press-link-container">
+            <a href="{{item.href}}" class="news-link-anchor">
+              <div class="img-container">
+                <img src="{{item.image}}" alt="Image of {{item.title|safe}}" />
+              </div>
+              <div class="text-container">
+                <h4>{{item.title|safe}}</h4>
+                <p class="p-smaller">{{item.date}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

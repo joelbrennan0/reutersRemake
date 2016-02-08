@@ -28,7 +28,7 @@ p {
   font-size: 0.85em;
 }
 
-a {
+a, a h4 {
   color: $gray-darker;
   &:hover {
     text-decoration: none;
@@ -122,21 +122,31 @@ section.header {
 .button-text {
 }
 
-/*==========  Press Release Section  =========*/
-.press-releases {
+/*============  Default Section(s)  ==========*/
+.default-section {
   text-align:  center;
+  margin-top: 100px;
   .side-wrap {
     padding: 10px 0;
   }
-  .side-wrap:before {
+  .side-wrap h1 {
+    position: relative;
+    margin-top: 0;
+  }
+  .side-wrap h1:before {
     content: "";
     position: absolute;
-    margin: auto;
+    left: 50%;
+    margin-left: -20px;
     width: 40px;
     height: 5px;
-    top: 0;
+    top: -25px;
     background: $primary;
   }
+}
+
+/*==========  Press Release Section  =========*/
+section.press-releases {
   .media-contact {
     margin: 50px 0 30px;
     a {
@@ -154,6 +164,32 @@ section.header {
     font-weight: 200;
   }
 }
+
+/*==========  News Links Section  =========*/
+
+section.in-the-news {
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    .press-link-container {
+      h4 {
+        font-size: 1.5rem;
+      }
+      .img-container {
+        width: 80px;
+        height: 80px;
+        border: 1px solid $gray-lighter;
+        background-color: #000000;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
 /*==========  Mobile First Method  ==========*/
 
  /* Custom, iPhone Retina */
@@ -169,37 +205,117 @@ section.header {
  /* Small Devices, Tablets */
  @media only screen and (min-width : 768px) {
 
+   .above-fold {
+     .web-app-lg {
+        margin-top: 150px;
+     }
+   }
+
+  .default-section {
+    text-align: left;
+    .side-wrap h1:before {
+      left: 0;
+      margin-left: 0;
+      width: 40px;
+      height: 5px;
+      top: -25px;
+      background: $primary;
+      text-align:  left;
+      h1 {
+        margin-top: 0;
+      }
+      .side-wrap h1:before {
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  #about {
+    display: block !important;
+  }
+  .mobile-show {
+    display: none;
+  }
+  .mobile-hide {
+    display: block;
+  }
+ .logo {
+   background-size: contain !important;
+   background-position: calc(100% - 0px) calc(100% - 0px) !important;
+   min-height: 110px !important;
+ }
+ .header-block.nav {
+   ul {
+     li {
+       line-height: 110px !important;
+     }
+   }
+ }
+ .cta-text {
+   position: absolute;
+ }
+ hr {
+   margin: 60px 25px;
+ }
+
+   section.in-the-news {
+     text-align: left;
+    .links-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0;
+      .press-link-container {
+        width: 100%;
+        margin-bottom: 75px;
+      }
+      .img-container {
+        margin-left: 0;
+        vertical-align: top;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+      }
+      .text-container {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+      }
+    }
+  }
  }
 
  /* Medium Devices, Desktops */
  @media only screen and (min-width : 992px) {
-   #about {
-     display: block !important;
+
+   .above-fold {
+     .web-app-lg {
+        margin-top: 0;
+     }
    }
-   .mobile-show {
-     display: none;
+
+  .default-section {
+
    }
-   .mobile-hide {
-     display: block;
+
+   section.in-the-news {
+     .links-container {
+       .press-link-container {
+        width: 50%;
+         .img-container {
+         width: 80px;
+         height: 80px;
+         }
+         .text-container {
+            h4 {
+              margin-top: 0;
+            }
+         }
+       }
+     }
    }
-  .logo {
-    background-size: contain !important;
-    background-position: calc(100% - 0px) calc(100% - 0px) !important;
-    min-height: 110px !important;
-  }
-  .header-block.nav {
-    ul {
-      li {
-        line-height: 110px !important;
-      }
-    }
-  }
-  .cta-text {
-    position: absolute;
-  }
-  hr {
-    margin: 60px 25px;
-  }
  }
 
 
@@ -209,4 +325,12 @@ section.header {
    .container {
      width: 90%;
    }
+   .default-section {
+     .side-wrap h1:before {
+       left: -40px;
+       width: 5px;
+       height: 90%;
+       top: 5%;
+     }
+    }
  }

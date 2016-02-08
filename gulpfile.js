@@ -58,6 +58,9 @@ gulp.task('nunjucks', function() {
   .pipe(data(function() {
     return require('./src/JSON/press-releases.json')
   }))
+  .pipe(data(function() {
+    return require('./src/JSON/news-links.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in src folder

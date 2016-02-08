@@ -5,4 +5,5 @@
 {% include "partials/_header.nunjucks" %}
 {% include "partials/_fold-section.nunjucks" %}
 {% include "partials/_press-releases.nunjucks" %}
+{% include "partials/_in-the-news.nunjucks" %}
 {% endblock %}

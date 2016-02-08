@@ -1,0 +1,41 @@
+{
+  "news_links":
+  [
+  {
+    "href":"http://www.niemanlab.org/2015/12/the-evolution-of-autoplay/",
+    "title":"The evolution of autoplay",
+    "image":"/img/press/Thumb-Nieman.gif",
+    "date":"December 16, 2015"
+  },
+  {
+    "href":"http://time.com/4143145/best-iphone-apps-2015/",
+    "title":"Apple&rsquo;s 25 best iPhone <br>apps of the year",
+    "image":"/img/press/Thumb-TIME.jpg",
+    "date":"December 9, 2015"
+  },
+  {
+    "href":"http://theplatter.io/apple-tv/reuters-tv-is-ready-for-the-new-apple-tv/",
+    "title":"Reuters TV is ready<br> for the new Apple TV",
+    "image":"/img/press/Thumb-ThePlatter.gif",
+    "date":"October 31, 2015"
+  },
+  {
+    "href":"http://digiday.com/publishers/reuters-tv-plots-expansion-following-shift-away-subscriptions/",
+    "title":"Reuters TV plots expansion<br> after dropping paywall",
+    "image":"/img/digiday.gif",
+    "date":"November 12, 2015"
+  },
+  {
+    "href":"http://www.relevantdad.com/2015/11/reuters-tv-app-brings-the-news-to-you/",
+    "title":"Reuters TV app brings<br> the news to you",
+    "image":"/img/press/Logo_RelevantDad.png",
+    "date":"November 5, 2015"
+  },
+  {
+    "href":"http://www.forbes.com/sites/robsalkowitz/2015/10/29/apple-tv-launches-with-a-diverse-slate-of-apps/",
+    "title":"Apple TV launches with <br>a diverse slate of apps",
+    "image":"/img/press/Logo_Forbes.png",
+    "date":"October 29, 2015"
+  }
+]
+}
