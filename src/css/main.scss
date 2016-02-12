@@ -56,39 +56,86 @@ img {
 /*==========  Header Section  ==========*/
 
 section.header {
-  background-color: grey;
-  color: #2a2a2a;
-  .spacer {
-    height: 25px;
-  }
-  .logo {
-    min-height: 50px;
-    background: url('../img/Reuters TV logo horizontal.png') no-repeat center;
-    background-size: cover;
-    background-position: calc(100% - -85px) calc(100% - 0px);
-  }
-  .header-block.nav {
-    font-size: 12px;
-    ul {
-      float: right;
-      list-style: none;
-      text-transform: uppercase;
-      vertical-align: middle;
-      display:inline-flex;
-      padding-left: 0;
-      li {
-        color: #2a2a2a;
-        display: inline-block;
-        font-weight: bold;
-        margin-left: 10px;
-        line-height: 50px
-      }
-      #about {
-        display: none;
-      }
-    }
+  .container {
+    //background-color: $gray-lighter;
   }
 }
+.header-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  height: 65px;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-block.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  li {
+    text-transform: uppercase;
+    font-weight: 900;
+    list-style: none;
+    text-align: right;
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  #about {
+    display: none;
+  }
+}
+
+.main-logo {
+  background: url('../img/Reuters TV logo vertical.png') no-repeat center;
+  background-size: cover;
+  background-position-y: -1px;
+  min-height: 92px;
+}
+
+// section.header {
+//   background-color: grey;
+//   color: #2a2a2a;
+//
+//
+//   .spacer {
+//     height: 25px;
+//   }
+//   .logo {
+//     min-height: 50px;
+//     background: url('../img/Reuters TV logo horizontal.png') no-repeat center;
+//     background-size: cover;
+//     background-position: calc(100% - -85px) calc(100% - 0px);
+//   }
+//   .header-block.nav {
+//     font-size: 12px;
+//     ul {
+//       float: right;
+//       list-style: none;
+//       text-transform: uppercase;
+//       vertical-align: middle;
+//       display:inline-flex;
+//       padding-left: 0;
+//       li {
+//         color: #2a2a2a;
+//         display: inline-block;
+//         font-weight: bold;
+//         margin-left: 10px;
+//         line-height: 50px
+//       }
+//       #about {
+//         display: none;
+//       }
+//     }
+//   }
+// }
 
 /*=========  Above Fold Section  ========*/
 
@@ -200,10 +247,28 @@ section.in-the-news {
  /* Extra Small Devices, Phones */
  @media only screen and (min-width : 480px) {
 
+
+      .main-logo {
+        background: url('../img/Reuters TV logo horizontal.png') no-repeat left center;
+        background-size: contain;
+        min-height: 0;
+      }
+
  }
 
  /* Small Devices, Tablets */
  @media only screen and (min-width : 768px) {
+
+   .header-row {
+     height: 135px;
+   }
+
+   .header-block.nav ul {
+     li {
+       margin-left: 20px;
+       font-size: 15px;
+     }
+   }
 
    .above-fold {
      .web-app-lg {
