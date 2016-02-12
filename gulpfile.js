@@ -61,6 +61,9 @@ gulp.task('nunjucks', function() {
   .pipe(data(function() {
     return require('./src/JSON/news-links.json')
   }))
+  .pipe(data(function() {
+    return require('./src/JSON/media-resources.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in src folder

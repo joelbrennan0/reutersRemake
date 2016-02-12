@@ -1,0 +1,23 @@
+<section class="media-resources default-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-2 side-wrap"><h1>MEDIA RESOURCES</h1>
+      </div>
+      <div class="col-sm-12">
+        {% for item in media_resources %}
+          <div class="item-container">
+              <div class="img-container">
+                <img src="{{item.thumbnail}}" alt="Image of {{item.title|safe}}" />
+              </div>
+              <div class="text-container">
+                <h4>{{item.title|safe}}</h4>
+                <p class="p-smaller"><a href="{{item.1_href}}"></a>{{item.link_1}}</p>
+                <p class="p-smaller"><a href="{{item.2_href}}"></a>{{item.link_2}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

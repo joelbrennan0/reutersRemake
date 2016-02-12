@@ -1,0 +1,125 @@
+{
+  "media_resources":
+  [
+    {
+      "thumbnail":"./img/press/4.png",
+      "title":"Reuters TV logo (horizontal)",
+      "link_1":"PNG (66 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Reuters%20TV%20logo%20horizontal.png",
+      "link_2":"EPS (414 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Reuters%20TV%20logo%20horizontal.eps"
+    },
+    {
+      "thumbnail":"./img/press/2.png",
+      "title":"Reuters TV on landscape iPhone 6",
+      "link_1":"Small PNG (100 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Landscape_Small.png",
+      "link_2":"Large PNG (474 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Landscape_Large.png"
+    },
+    {
+      "thumbnail":"./img/press/9.png",
+      "title":"Screenshot in context (portrait)",
+      "link_1":"Small PNG (495 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Context_Portrait_Small.png",
+      "link_2":"Large PNG (2.3 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Context_Portrait_Large.png"
+    },
+    {
+      "thumbnail":"./img/press/1.gif",
+      "title":"Reuters TV logo (vertical)",
+      "link_1":"PNG (89.4 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Reuters%20TV%20logo%20vertical.png",
+      "link_2":"EPS (565.6 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Reuters%20TV%20logo%20vertical.eps"
+    },
+    {
+      "thumbnail":"./img/press/rtv_portrait_iphone.png",
+      "title":"Reuters TV on portrait iPhone 6",
+      "link_1":"Small PNG (182 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Portrait_Small.png",
+      "link_2":"Large PNG (474 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Portrait_Large.png"
+    },
+    {
+      "thumbnail":"./img/press/3.jpg",
+      "title":"Video: Reuters TV Anthem Film",
+      "link_1":"Embed HTML",
+      "1_href":"https://www.reuters.tv/press#",
+      "link_2":"Download MP4 (7.6 MB)",
+      "2_href":"https://www.reuters.tv/videos/anthem-od47.mp4"
+    },
+    {
+      "thumbnail":"./img/press/7.png",
+      "title":"Hand holding phone",
+      "link_1":"Small PNG (406 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/HandHolding_Small.png",
+      "link_2":"Large PNG (410 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/HandHolding_Large.png"
+    },
+    {
+      "thumbnail":"./img/press/8.png",
+      "title":"Screenshot in context (landscape)",
+      "link_1":"Small PNG (521 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Context_Landscape_Small.png",
+      "link_2":"Large PNG (2.4 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Context_Landscape_Large.png"
+    },
+    {
+      "thumbnail":"./img/press/6.jpg",
+      "title":"Video: Reuters TV Reveal Party Keynote",
+      "link_1":"Embed HTML",
+      "1_href":"https://www.reuters.tv/press#",
+      "link_2":"Download MP4 (70.2 MB)",
+      "2_href":"https://www.reuters.tv/about/videos/launch-party-video.mp4"
+    },
+    {
+      "thumbnail":"./img/press/ipad-portrait_hand_thumb.png",
+      "title":"Hand holding iPad",
+      "link_1":"Small PNG (765 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/ipad-portrait_hand_small.png",
+      "link_2":"Large PNG (1.3 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/ipad-portrait_hand_large.png"
+    },
+    {
+      "thumbnail":"./img/press/Context_thumb.png",
+      "title":"iPad screenshot in context (landscape)",
+      "link_1":"Small PNG (819 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/Context_small.png",
+      "link_2":"Large PNG (1.2 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/Context_large.png"
+    },
+    {
+      "thumbnail":"./img/press/ipad-angled_thumb.png",
+      "title":"iPad (angled)",
+      "link_1":"Small PNG (495 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/ipad-angled_small.png",
+      "link_2":"Large PNG (2.3 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/ipad-angled_large.png"
+    },
+    {
+      "thumbnail":"./img/press/TV_02-thumb.png",
+      "title":"Apple TV",
+      "link_1":"Small PNG (376 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/TV_02-small.png",
+      "link_2":"Large PNG (1.2 MB)",
+      "2_href":"https://www.reuters.tv/about/img/press/TV_02-large.png"
+    },
+    {
+      "thumbnail":"./img/press/WebApp_thumb.png",
+      "title":"Web App",
+      "link_1":"Small PNG (496 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/WebApp_small.png",
+      "link_2":"Large PNG (860 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/WebApp_large.png"
+    },
+    {
+      "thumbnail":"./img/press/WebAppContext_thumb.png",
+      "title":"Web App in context",
+      "link_1":"Small JPG (332 KB)",
+      "1_href":"https://www.reuters.tv/about/img/press/WebAppContext_05small.jpg",
+      "link_2":"Large JPG (886 KB)",
+      "2_href":"https://www.reuters.tv/about/img/press/WebAppContext_05large.jpg"
+    }
+  ]
+}
