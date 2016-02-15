@@ -6,6 +6,10 @@
 
 /*==========  Site-Wide  ==========*/
 
+body {
+  background-color: #FEFEFE;
+}
+
 .container {
   max-width: 1335px
 }
@@ -56,9 +60,7 @@ img {
 /*==========  Header Section  ==========*/
 
 section.header {
-  .container {
-    //background-color: $gray-lighter;
-  }
+    background-color: #ffffff;
 }
 .header-row {
   display: -webkit-box;
@@ -100,43 +102,6 @@ section.header {
   min-height: 92px;
 }
 
-// section.header {
-//   background-color: grey;
-//   color: #2a2a2a;
-//
-//
-//   .spacer {
-//     height: 25px;
-//   }
-//   .logo {
-//     min-height: 50px;
-//     background: url('../img/Reuters TV logo horizontal.png') no-repeat center;
-//     background-size: cover;
-//     background-position: calc(100% - -85px) calc(100% - 0px);
-//   }
-//   .header-block.nav {
-//     font-size: 12px;
-//     ul {
-//       float: right;
-//       list-style: none;
-//       text-transform: uppercase;
-//       vertical-align: middle;
-//       display:inline-flex;
-//       padding-left: 0;
-//       li {
-//         color: #2a2a2a;
-//         display: inline-block;
-//         font-weight: bold;
-//         margin-left: 10px;
-//         line-height: 50px
-//       }
-//       #about {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
 /*=========  Above Fold Section  ========*/
 
 .above-fold {
@@ -172,13 +137,15 @@ section.header {
 /*============  Default Section(s)  ==========*/
 .default-section {
   text-align:  center;
-  margin-top: 100px;
+  padding: 100px 0 60px;
+  border-bottom: 1px solid #e5e5e5;
   .side-wrap {
-    padding: 10px 0;
+    padding: 10px 15px;
   }
   .side-wrap h1 {
     position: relative;
     margin-top: 0;
+    margin-bottom: 60px;
   }
   .side-wrap h1:before {
     content: "";
@@ -189,6 +156,9 @@ section.header {
     height: 5px;
     top: -25px;
     background: $primary;
+  }
+  ul {
+    font-weight: 300;
   }
 }
 
@@ -234,6 +204,73 @@ section.in-the-news {
     }
   }
 }
+
+/*========  Media Resources Section  =======*/
+
+section.media-resources {
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+      h4 {
+        font-size: 1.5rem;
+      }
+      .img-container {
+        width: 80px;
+        height: 80px;
+        border: 1px solid $gray-lighter;
+        background-color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .text-container {
+        ul {
+          list-style-type: square;
+          color: $gray-light;
+          margin: 0;
+          padding-left: 15px;
+          display: inline-block;
+        }
+        a {
+          text-decoration: underline;
+          color: $gray-light;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+  }
+}
+
+/*==============  FAQS Section  ==============*/
+section.faqs {
+  .side-wrap h1 {
+    margin-bottom: 15px;
+  }
+  h4, p, ul {
+    font-size: 1.5rem;
+  }
+  h4 {
+    margin-top: 30px;
+  }
+  ul {
+    list-style: square inside;
+    color: $gray-light;
+    margin: 0;
+    padding-left: 15px;
+    display: inline-block;
+  }
+  a {
+    text-decoration: underline;
+    color: $gray-light;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 
 
 
@@ -350,6 +387,33 @@ section.in-the-news {
       }
     }
   }
+
+  section.media-resources {
+    .links-container {
+      display: inline-flex;
+      flex-direction: row;
+      margin-left: -3px;
+      width: 33.33%;
+      vertical-align: top;
+      margin-bottom: 60px;
+      .img-container {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+      }
+      .text-container {
+        margin: 0;
+        padding: 0 15px;
+        margin-left: 50px;
+        h4 {
+          font-size: 1.2rem;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
  }
 
  /* Medium Devices, Desktops */
@@ -381,6 +445,17 @@ section.in-the-news {
        }
      }
    }
+   section.media-resources {
+     .links-container {
+       .img-container {
+         width: 60px;
+         height: 60px;
+       }
+       .text-container {
+         margin-left: 60px;
+       }
+     }
+   }
  }
 
 
@@ -396,6 +471,17 @@ section.in-the-news {
        width: 5px;
        height: 90%;
        top: 5%;
-     }
+       }
+    }
+    section.media-resources {
+      .links-container {
+        .img-container {
+          width: 80px;
+          height: 80px;
+        }
+        .text-container {
+          margin-left: 80px;
+        }
+      }
     }
  }

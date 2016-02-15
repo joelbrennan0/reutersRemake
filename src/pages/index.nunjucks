@@ -7,4 +7,5 @@
 {% include "partials/_press-releases.nunjucks" %}
 {% include "partials/_in-the-news.nunjucks" %}
 {% include "partials/_media-resources.nunjucks" %}
+{% include "partials/_faqs.nunjucks" %}
 {% endblock %}

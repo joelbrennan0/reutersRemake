@@ -1,0 +1,9 @@
+<section class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 copyright"></div>
+        <div class="col-xs-12 footer-menu"></div>
+        <div class="col-xs-12 social-links"></div>
+    </div>
+  </div>
+</section>

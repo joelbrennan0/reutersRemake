@@ -1,0 +1,47 @@
+<section class="faqs default-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 side-wrap"><h1>FAQS</h1>
+        <a class="p-smaller"  href="https://www.reuters.tv/about/img/Reuters%20TV%20FAQs.pdf" target="_blank"
+        >Download as PDF</a>
+      </div>
+      <div class="col-sm-4">
+        <h4>What is Reuters TV?</h4>
+        <p>Designed to meet the demands of mobile viewers, Reuters TV offers two unique services:</p>
+
+        <p><b>Reuters Now</b> - an algorithmically assembled but editorially curated news program that is:</p>
+        <ul>
+          <li>On-demand</li>
+          <li>Up-to-date</li>
+          <li>Any duration (between 5 and 30 minutes)</li>
+          <li>Customized to each viewer&rsquo;s interests and location</li>
+          <li>Downloadable for offline viewing</li>
+        </ul>
+        <p><b>Live Feeds:</b></p>
+        <ul>
+          <li>Real-time coverage of global events (from protests in Egypt to Presidential speeches in Washington D.C.)</li>
+          <li>Unfiltered and uninterrupted</li>
+          <li>Available live and on-demand</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>What type of news does Reuters TV cover?</h4>
+        <p>Reuters TV covers general-interest stories (national and worldwide) targeted at a US and International audiences. Editorial content within Reuters TV is produced exclusively for the service and draws upon Reuters extraordinary reach from 2,500 journalists in over 160 countries.</p>
+
+        <p>Reuters TV content is more raw and more urgent than traditional TV news, with a focus on telling stories from capitals, money centers and conflict zones around the world and delivering insights and analysis from Reuters journalists as stories develop.</p>
+
+        <p>Reuters Now features segments from journalists in over 200 bureaus worldwide, across a wide spectrum of categories including: current events, politics, business &amp; finance, technology, sports and entertainment and more. Live Feeds cover dozens of worldwide events each week, from presidential speeches to raw protest footage, streaming directly to viewers as they happen.</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>How is Reuters TV customized to its viewers?</h4>
+        <p>Viewers are in control of how and when they watch their news and the content is customized based on the their location and viewing history. On the iPhone and iPad app, viewers can set an auto-download of Reuters Now in time for a daily commute, so they can watch the news without internet connection. Viewers can also choose the length of the Reuters Now news show from 5 to 30 minutes.</p>
+        <h4>Will there be advertisements within Reuters TV?</h4>
+        <p>Reuters TV includes limited, premium advertising. Approximately 5% of viewing time is dedicated to ads, compared with 25% on traditional TV. </p>
+        <h4>Where is Reuters TV available?</h4>
+        <p>Reuters TV is available as an app on iPhone, iPad, Apple TV and on the Web.</p>
+        <h4>How much does Reuters TV cost?</h4>
+        <p>Access to Reuters TV is completely free with limited advertising. On the iPhone and iPad app, viewers can choose to subscribe for $1.99/£1.49 per month to watch without ads via in-app purchase from the <a href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4384474cbb806b&amp;network_id=2007&amp;device_id=device_id&amp;site_id=1" target="_blank">iTunes App Store.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
