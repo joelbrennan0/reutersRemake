@@ -9,6 +9,8 @@
 
 body {
   background-color: #FEFEFE;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   color: $gray-darker;
+  font-weight: 700;
 }
 
 h1 {
@@ -239,11 +242,8 @@ section.media-resources {
           display: inline-block;
         }
         a {
-          text-decoration: underline;
+          @include underline-inverse();
           color: $gray-light;
-          &:hover {
-            text-decoration: none;
-          }
         }
       }
   }
@@ -269,11 +269,8 @@ section.faqs {
     display: inline-block;
   }
   a {
-    text-decoration: underline;
+    @include underline-inverse();
     color: $gray-light;
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
 
@@ -282,6 +279,9 @@ section.footer {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  .p-smaller {
+    color: darken( $gray-lighter, 15% );
+  }
 }
 
 .footer-menu, .social-links {
@@ -289,7 +289,7 @@ section.footer {
   li {
     display: inline;
     a {
-      color: $gray-light;
+      color: darken( $gray-lighter, 15% );
       font-weight: 300;
     }
   }
@@ -297,13 +297,39 @@ section.footer {
 
 .footer-menu {
   padding-left: 20px;
-  li {
-    text-decoration: underline;
+  li a {
+    @include underline-inverse();
+    padding: 0 5px;
   }
 }
 
+.social-links-container {
+  padding: 45px 0 20px;
+}
+
 .social-links {
-  padding-left: 0;
+  padding: 0;
+  i {
+    font-size: 1.7em;
+    margin-top: 8px;
+  }
+}
+
+.social-icon-container {
+  background-color: darken( $gray-lighter, 15% );
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 5px;
+  &:hover {
+    transition: background-color 0.5s ease;
+    background-color: $primary;
+  }
+}
+
+.social-link > a > i {
+  color: #FEFEFE;
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -345,25 +371,25 @@ section.footer {
      }
    }
 
-  .default-section {
-    text-align: left;
-    .side-wrap h1:before {
-      left: 0;
-      margin-left: 0;
-      width: 40px;
-      height: 5px;
-      top: -25px;
-      background: $primary;
-      text-align:  left;
-      h1 {
-        margin-top: 0;
-      }
-      .side-wrap h1:before {
-        left: 0;
-        margin-left: 0;
-      }
-    }
-  }
+   .default-section {
+     text-align: left;
+     .side-wrap h1:before {
+       left: 0;
+       margin-left: 0;
+       width: 40px;
+       height: 5px;
+       top: -25px;
+       background: $primary;
+       text-align:  left;
+       h1 {
+         margin-top: 0;
+       }
+       .side-wrap h1:before {
+         left: 0;
+         margin-left: 0;
+       }
+     }
+   }
 
   #about {
     display: block !important;

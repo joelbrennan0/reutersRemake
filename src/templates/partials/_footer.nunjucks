@@ -14,12 +14,13 @@
             <li class="p-smaller"><a href="">Download the App</a></li>
           </ul>
         </div>
-        <div class="col-xs-12 social-links">
+        <div class="col-xs-12 social-links-container">
+          <p class="p-smaller">Stay connected with @ReutersTV on</p>
           <ul class="social-links">
-            <li class="social-link"><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li class="social-link"><a href=""><i class="fa fa-twitter"></a></i></li>
-            <li class="social-link"><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li class="social-link"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+            <div class="social-icon-container"><li class="social-link"><a href=""><i class="fa fa-facebook"></i></a></li></div>
+            <div class="social-icon-container"><li class="social-link"><a href=""><i class="fa fa-twitter"></a></i></li></div>
+            <div class="social-icon-container"><li class="social-link"><a href=""><i class="fa fa-instagram"></i></a></li></div>
+            <div class="social-icon-container"><li class="social-link"><a href=""><i class="fa fa-envelope-o"></i></a></li></div>
           </ul>
         </div>
     </div>
