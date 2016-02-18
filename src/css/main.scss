@@ -3,6 +3,7 @@
 @import "mixins";
 @import "bootstrap";
 @import "bootstrap/theme";
+@import "font-awesome";
 
 /*==========  Site-Wide  ==========*/
 
@@ -55,6 +56,10 @@ img {
 }
 .mobile-hide {
   display: none;
+}
+
+.inline-element {
+  display: inline;
 }
 
 /*==========  Header Section  ==========*/
@@ -259,7 +264,8 @@ section.faqs {
     list-style: square inside;
     color: $gray-light;
     margin: 0;
-    padding-left: 15px;
+    margin-bottom: 20px;
+    padding-left: 0;
     display: inline-block;
   }
   a {
@@ -271,8 +277,34 @@ section.faqs {
   }
 }
 
+/*=================  Footer  ================*/
+section.footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.footer-menu, .social-links {
+  list-style-type: none;
+  li {
+    display: inline;
+    a {
+      color: $gray-light;
+      font-weight: 300;
+    }
+  }
+}
 
+.footer-menu {
+  padding-left: 20px;
+  li {
+    text-decoration: underline;
+  }
+}
+
+.social-links {
+  padding-left: 0;
+}
 
 /*==========  Mobile First Method  ==========*/
 

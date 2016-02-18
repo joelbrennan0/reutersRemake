@@ -32,7 +32,7 @@ var js = {
 
 // fonts
 var fonts = {
-        in: [source + 'fonts/*.*', bootstrapSass.in + 'assets/fonts/**/*'],
+        in: [source + 'fonts/*.*', bootstrapSass.in + 'assets/fonts/**/*', './bower_components/font-awesome/fonts/*.*'],
         out: dest + 'fonts/'
     };
 
@@ -45,7 +45,7 @@ var css = {
         outputStyle: 'nested',
         precison: 3,
         errLogToConsole: true,
-        includePaths: [bootstrapSass.in + 'assets/stylesheets']
+        includePaths: [bootstrapSass.in + 'assets/stylesheets', 'bower_components/font-awesome/scss']
     }
 };
 
