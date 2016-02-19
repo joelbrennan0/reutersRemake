@@ -10,8 +10,7 @@
               <li id="press">Press</li>
               <li id="careers">Careers</li>
             </ul>
-          </div>
-        </div>
-    </div>
-  </div>
+          </div><!--header-block-->
+      </div><!--row-->
+  </div><!--container-->
 </section>

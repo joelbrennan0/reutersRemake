@@ -7,6 +7,8 @@
         {% for item in media_resources %}
           <div class="links-container">
               <div class="img-container">
+                <!-- Workaround for centering images using flexbox -->
+                <!--[if lt IE 10]><span class="helper"></span><![endif]-->
                 <img src="{{item.thumbnail}}" alt="Image of {{item.title|safe}}" />
               </div>
               <div class="text-container">
