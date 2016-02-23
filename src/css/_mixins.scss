@@ -27,6 +27,13 @@
   }
 }
 
+@mixin underline() {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @mixin underline-inverse() {
   text-decoration: underline;
   &:hover {

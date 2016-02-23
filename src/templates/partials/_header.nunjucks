@@ -7,7 +7,7 @@
               <li id="about">About</li>
               <li id="advertise">Advertise</li>
               <li id="publishers">Publishers</li>
-              <li id="press">Press</li>
+              <li id="press" class="current_tab">Press</li>
               <li id="careers">Careers</li>
             </ul>
           </div><!--header-block-->

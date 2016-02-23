@@ -7,7 +7,7 @@
         {% for item in news_links %}
           <div class="press-link-container">
             <a href="{{item.href}}" class="news-link-anchor">
-              <div class="img-container">
+              <div class="img-container {{item.background}}">
                 <!-- Workaround for centering images using flexbox -->
                 <!--[if lt IE 10]><span class="helper"></span><![endif]-->
                 <img src="{{item.image}}" alt="Image of {{item.title|safe}}" />
