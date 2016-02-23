@@ -484,7 +484,7 @@ section.footer {
         vertical-align: top;
         width: 50px;
         height: 50px;
-        max-width: 20%;
+        max-width: 25%;
         display: inline-block;
       }
       .text-container {
@@ -550,8 +550,8 @@ section.footer {
        .press-link-container {
         width: 50%;
          .img-container {
-         width: 80px;
-         height: 80px;
+         width: 50px;
+         height: 50px;
          }
          .text-container {
             h4 {
@@ -591,6 +591,16 @@ section.footer {
        height: 90%;
        top: 5%;
        }
+    }
+    section.in-the-news {
+      .links-container {
+        .press-link-container {
+          .img-container {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
     }
     section.media-resources {
       .links-container {
